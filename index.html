@@ -4,52 +4,68 @@
     <meta charset="UTF-8">
     <title>Braeden G Waller - XR Portfolio</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        h1 { color: #00274c; border-bottom: 2px solid #ffcb05; padding-bottom: 10px; }
-        .project { background: #f4f4f4; padding: 20px; margin-bottom: 30px; border-radius: 8px; }
-        video { width: 100%; border-radius: 4px; background: #000; }
-        .tech-stack { font-weight: bold; color: #555; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 20px; color: #333; background-color: #fafafa; }
+        h1 { color: #00274c; border-bottom: 3px solid #ffcb05; padding-bottom: 10px; margin-bottom: 0; }
+        .subtitle { font-style: italic; color: #555; margin-bottom: 30px; }
+        .project-card { background: white; padding: 30px; margin-bottom: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { color: #00274c; margin-top: 0; }
+        video { width: 100%; border-radius: 8px; background: #000; margin: 20px 0; }
+        .tag { display: inline-block; background: #eee; padding: 4px 12px; border-radius: 15px; font-size: 0.85em; margin-right: 5px; font-weight: bold; }
+        .tech-section { background: #f0f4f8; padding: 15px; border-left: 5px solid #00274c; margin: 20px 0; }
+        ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+        @media (max-width: 600px) { ul { columns: 1; } }
     </style>
 </head>
 <body>
 
-    <h1>Braeden G Waller - XR Portfolio</h1>
-    <p>Computer Science & Engineering | University of Michigan</p>
+    <h1>Braeden G Waller</h1>
+    <div class="subtitle">Computer Science & Engineering | University of Michigan</div>
 
-    <div class="project">
-        <h2>Project 1: CSE Simulator (Gold Deliverable)</h2>
-        <p>This project involved developing an interactive VR simulation. Key features include a custom day-night cycle progression and a delivery-based NPC interaction system[cite: 14, 24].</p>
-        
-        <h3>Demonstration Video</h3>
+    <div class="project-card">
+        <h2>Project 1: Beyster 1695 Simulator (Gold)</h2>
+        <p>A high-fidelity VR reconstruction of the historic Beyster 1695 Laboratory. This project demonstrates environmental block-outs, complex interaction systems, and custom gameplay logic implemented for the EECS XR Capstone[cite: 13, 14].</p>
+
+        <span class="tag">Unreal Engine 5.2</span>
+        <span class="tag">Blueprints</span>
+        <span class="tag">VR Interaction</span>
+
         <video controls>
             <source src="p1_gold_demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <h3>Technologies Utilized</h3>
-        <p class="tech-stack">Unreal Engine 5, Blueprints Visual Scripting, VR Template[cite: 40].</p>
-        
-        <h3>Project Tasks</h3>
+        <div class="tech-section">
+            <h3>Technologies & Techniques</h3>
+            <p>Utilized <strong>Unreal Engine 5</strong> and <strong>Blueprints</strong> to develop a modular interaction system[cite: 40]. Key implementations include <strong>LineTrace-based affordances</strong>, <strong>FInterp To</strong> for smooth day-night transitions, and <strong>UMG Widget Components</strong> for world-space NPC dialogue.</p>
+        </div>
+
+        <h3>Core Implemented Features</h3>
         <ul>
-            <li>Implemented custom actor for smooth time-of-day transitions[cite: 24, 31].</li>
-            <li>Developed NPC hand-off interaction with auditory and visual feedback[cite: 14, 31].</li>
-            <li>Completed all milestone and alpha simulation requirements[cite: 14, 30].</li>
+            <li>Smooth Day-Night Sun Progression</li>
+            <li>Dynamic NPC Dialogue Cycle (3 Unique NPCs)</li>
+            <li>Physics-based Trash & Disposal System</li>
+            <li>Interactive Whiteboard Drawing</li>
+            <li>Functional Fire Alarm & Light Toggle Systems</li>
+            <li>Procedural Copy Machine Duplication</li>
         </ul>
+
+        <h3>Custom Gold Interaction: Lab Assistant Task</h3>
+        <p>Implemented a custom "Lab Assistant" workflow. Players must resolve environmental issues—such as glitching computers and sparking printers—before delivering a Lab Report to an NPC to receive a celebratory "Green Light" reward and auditory feedback.</p>
     </div>
 
-    <div class="project">
+    <div class="project-card">
         <h2>Project 2</h2>
-        <p>Coming Soon...</p>
+        <p>Future project to be added upon completion[cite: 46].</p>
     </div>
 
-    <div class="project">
+    <div class="project-card">
         <h2>Project 3</h2>
-        <p>Coming Soon...</p>
+        <p>Future project to be added upon completion[cite: 46].</p>
     </div>
 
-    <hr>
-    <p>&copy; 2026 Braeden G Waller</p>
+    <footer style="text-align: center; color: #888; margin-top: 50px;">
+        <p>&copy; 2026 Braeden G Waller | University of Michigan Engineering</p>
+    </footer>
 
 </body>
 </html>
-
