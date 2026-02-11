@@ -9,7 +9,8 @@
         .subtitle { font-style: italic; color: #555; margin-bottom: 30px; }
         .project-card { background: white; padding: 30px; margin-bottom: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         h2 { color: #00274c; margin-top: 0; }
-        video { width: 100%; border-radius: 8px; background: #000; margin: 20px 0; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px; margin: 20px 0; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
         .tag { display: inline-block; background: #eee; padding: 4px 12px; border-radius: 15px; font-size: 0.85em; margin-right: 5px; font-weight: bold; }
         .tech-section { background: #f0f4f8; padding: 15px; border-left: 5px solid #00274c; margin: 20px 0; }
         ul { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
@@ -22,49 +23,48 @@
     <div class="subtitle">Computer Science & Engineering | University of Michigan</div>
 
     <div class="project-card">
-        <h2>Project 1: Beyster 1695 Simulator (Gold)</h2>
-        <p>A high-fidelity VR reconstruction of the historic Beyster 1695 Laboratory. This project demonstrates environmental block-outs, complex interaction systems, and custom gameplay logic implemented for the EECS XR Capstone[cite: 13, 14].</p>
+        <h2>Project 1: Beyster 1695 Simulator (Gold Edition)</h2>
+        <p>A VR preservation of the historic Beyster 1695 Laboratory. This project features a fully interactive environment with custom mechanics, NPC dialogue systems, and complex physical interactions[cite: 13, 14].</p>
 
         <span class="tag">Unreal Engine 5.2</span>
         <span class="tag">Blueprints</span>
-        <span class="tag">VR Interaction</span>
+        <span class="tag">Meta Quest VR</span>
 
-        <video controls>
-            <source src="p1_gold_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="tech-section">
-            <h3>Technologies & Techniques</h3>
-            <p>Utilized <strong>Unreal Engine 5</strong> and <strong>Blueprints</strong> to develop a modular interaction system[cite: 40]. Key implementations include <strong>LineTrace-based affordances</strong>, <strong>FInterp To</strong> for smooth day-night transitions, and <strong>UMG Widget Components</strong> for world-space NPC dialogue.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/HKtzDXp82Q8?si=IdSqYYQ-NUvVclhd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <h3>Core Implemented Features</h3>
+        <div class="tech-section">
+            <h3>Technologies & Implementation</h3>
+            <p>Developed using <strong>Unreal Engine 5</strong> and <strong>Blueprints</strong>. Key technical implementations include <strong>LineTrace-based interaction systems</strong>, <strong>FInterp To</strong> for a smooth, interactive Day-Night cycle, and <strong>World-Space UI Widgets</strong> for non-diegetic NPC communication.</p>
+        </div>
+
+        <h3>Core Project Tasks</h3>
         <ul>
-            <li>Smooth Day-Night Sun Progression</li>
-            <li>Dynamic NPC Dialogue Cycle (3 Unique NPCs)</li>
+            <li>Smooth Day-Night Time Progression</li>
             <li>Physics-based Trash & Disposal System</li>
-            <li>Interactive Whiteboard Drawing</li>
-            <li>Functional Fire Alarm & Light Toggle Systems</li>
-            <li>Procedural Copy Machine Duplication</li>
+            <li>3 Unique NPCs with Cycling Dialogue</li>
+            <li>Interactive Whiteboard Drawing Mechanics</li>
+            <li>Procedural Copy Machine Item Duplication</li>
+            <li>Environmental Toggles (Fire Alarms/Lights)</li>
         </ul>
 
-        <h3>Custom Gold Interaction: Lab Assistant Task</h3>
-        <p>Implemented a custom "Lab Assistant" workflow. Players must resolve environmental issues—such as glitching computers and sparking printers—before delivering a Lab Report to an NPC to receive a celebratory "Green Light" reward and auditory feedback.</p>
+        <h3>Custom Gold Interaction: "The Lab Technician"</h3>
+        <p>For the Gold deliverable, I implemented a multi-stage maintenance workflow. Players act as lab staff to resolve environmental crises: fixing a sparking printer, resolving a glitching computer, and plugging a USB drive into a server to successfully complete the 3-task sequence and unlock the final reward.</p>
     </div>
 
     <div class="project-card">
         <h2>Project 2</h2>
-        <p>Future project to be added upon completion[cite: 46].</p>
+        <p>Coming Soon...</p>
     </div>
 
     <div class="project-card">
         <h2>Project 3</h2>
-        <p>Future project to be added upon completion[cite: 46].</p>
+        <p>Coming Soon...</p>
     </div>
 
     <footer style="text-align: center; color: #888; margin-top: 50px;">
-        <p>&copy; 2026 Braeden G Waller | University of Michigan Engineering</p>
+        <p>&copy; 2026 Braeden G Waller | U-M EECS 440</p>
     </footer>
 
 </body>
