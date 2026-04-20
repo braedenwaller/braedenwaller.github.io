@@ -18,27 +18,22 @@
     </style>
 </head>
 <body>
-
     <h1>Braeden G Waller</h1>
     <div class="subtitle">Computer Science & Engineering | University of Michigan</div>
 
     <div class="project-card">
         <h2>Project 1: Beyster 1695 Simulator (Gold Edition)</h2>
-        <p>A VR preservation of the historic Beyster 1695 Laboratory. This project features a fully interactive environment with custom mechanics, NPC dialogue systems, and complex physical interactions[cite: 13, 14].</p>
-
+        <p>A VR preservation of the historic Beyster 1695 Laboratory. This project features a fully interactive environment with custom mechanics, NPC dialogue systems, and complex physical interactions.</p>
         <span class="tag">Unreal Engine 5.2</span>
         <span class="tag">Blueprints</span>
         <span class="tag">Meta Quest VR</span>
-
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/HKtzDXp82Q8?si=IdSqYYQ-NUvVclhd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
         <div class="tech-section">
             <h3>Technologies & Implementation</h3>
             <p>Developed using <strong>Unreal Engine 5</strong> and <strong>Blueprints</strong>. Key technical implementations include <strong>LineTrace-based interaction systems</strong>, <strong>FInterp To</strong> for a smooth, interactive Day-Night cycle, and <strong>World-Space UI Widgets</strong> for non-diegetic NPC communication.</p>
         </div>
-
         <h3>Core Project Tasks</h3>
         <ul>
             <li>Smooth Day-Night Time Progression</li>
@@ -48,24 +43,75 @@
             <li>Procedural Copy Machine Item Duplication</li>
             <li>Environmental Toggles (Fire Alarms/Lights)</li>
         </ul>
-
         <h3>Custom Gold Interaction: "The Lab Technician"</h3>
         <p>For the Gold deliverable, we implemented a multi-stage maintenance workflow. Players act as lab staff to resolve environmental crises: fixing a sparking printer, resolving a glitching computer, and plugging a USB drive into a server to successfully complete the 3-task sequence and unlock the final reward.</p>
     </div>
 
     <div class="project-card">
-        <h2>Project 2</h2>
-        <p>Coming Soon...</p>
+        <h2>Project 2: A2-GO! (Gold Edition)</h2>
+        <p>A location-based augmented reality mobile application inspired by Pok&eacute;mon Go, built with Unity Engine, Mapbox GPS integration, and ARFoundation. Players explore a real-world map of Ann Arbor, discover landmarks, plant and grow virtual trees, manage an in-game economy, and defend their trees from squirrels in AR combat.</p>
+        <span class="tag">Unity 2021</span>
+        <span class="tag">C# Scripting</span>
+        <span class="tag">ARFoundation / ARKit</span>
+        <span class="tag">Mapbox SDK</span>
+        <span class="tag">iOS</span>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ECQDQCpa7Gc" title="A2-GO! Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="tech-section">
+            <h3>Technologies & Implementation</h3>
+            <p>Developed using <strong>Unity 2021</strong> with <strong>C# scripting</strong>. The app integrates <strong>Mapbox SDK</strong> for real-world GPS map rendering and <strong>ARFoundation with ARKit</strong> for camera-based AR interactions. Key technical implementations include <strong>ARRaycastManager</strong> for plane detection and cursor placement, <strong>GPS-to-WorldPosition coordinate conversion</strong> via Mapbox's AbstractMap API, a <strong>static TreeBank data system</strong> for cross-scene tree persistence, and <strong>DontDestroyOnLoad</strong> for persistent UI across scene transitions.</p>
+        </div>
+        <h3>Core Project Tasks</h3>
+        <ul>
+            <li>AR Seed Placement via Cursor Raycasting</li>
+            <li>Scrollable Inventory Bar with Quantity Tracking</li>
+            <li>6 Unique Tree Types with Gradual Growth</li>
+            <li>GPS Coordinate Conversion (AR to Map)</li>
+            <li>Landmark Discovery &amp; Seed Unlocking</li>
+            <li>Seed Shop with Currency Economy</li>
+            <li>Squirrel Spawning &amp; Evasion AI</li>
+            <li>Acorn Projectile Combat System</li>
+            <li>Dynamic Music Switching (Explore / Interact / Battle)</li>
+            <li>Orbit Camera with Touch Controls</li>
+            <li>Compass &amp; Currency UI Overlays</li>
+            <li>Image Tracking Currency Boost</li>
+        </ul>
+        <h3>Custom Gold Feature: Crabapple Bonus Drop</h3>
+        <p>For the Gold deliverable, we implemented a custom mechanic where fully-grown Crabapple trees drop a tappable red apple that grants bonus currency when collected. The TreeLogic script monitors the tree's growth scale and spawns the apple prefab once it reaches maturity, while an AppleClick script uses Physics.Raycast to detect mobile screen taps on the 3D object in AR space.</p>
+        <h3>My Contributions</h3>
+        <p>I was responsible for the AR interaction pipeline: seed placement logic, inventory bar UI, the SeedManager and TreeBankManager scripts for cross-scene tree persistence, audio systems for both exploration and interaction modes, acorn projectile combat, the SquirrelManager random spawning system, and the Crabapple bonus drop mechanic. My partner handled landmarks, the walking avatar, orbit camera controls, the seed shop, and 3D tree modeling.</p>
     </div>
 
     <div class="project-card">
-        <h2>Project 3</h2>
-        <p>Coming Soon...</p>
+        <h2>Project 3: Space Runner VR</h2>
+        <p>A sci-fi themed VR workout game built in Unreal Engine where players physically dodge obstacles in real time. As a team contribution, I implemented the <strong>wall cutout room mechanic</strong> &mdash; walls with body-shaped gaps that slide toward the player, forcing them to physically move their body to pass through safely.</p>
+        <span class="tag">Unreal Engine</span>
+        <span class="tag">Blueprints</span>
+        <span class="tag">Meta Quest Pro</span>
+        <span class="tag">VR Fitness</span>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/izcNppg5baY" title="Space Runner VR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="tech-section">
+            <h3>Technologies & Implementation</h3>
+            <p>Built in <strong>Unreal Engine</strong> using <strong>Blueprint scripting</strong> for the VR template. The wall cutout mechanic uses a <strong>Timeline + Lerp</strong> approach for smooth, predictable wall movement toward the player, with <strong>OverlapAllDynamic</strong> collision detection and a <strong>Cast To VRPawn</strong> check to reliably identify player hits. A <code>bHasHitPlayer</code> boolean guards the hit logic to prevent double-triggering on a single pass.</p>
+        </div>
+        <h3>My Contributions</h3>
+        <ul>
+            <li>Wall Cutout Room Mechanic (Blueprint)</li>
+            <li>Timeline-Driven Wall Movement</li>
+            <li>VRPawn Collision &amp; Hit Detection</li>
+            <li>Double-Hit Prevention Logic</li>
+            <li>VR Spawn Configuration (PlayerStart)</li>
+            <li>Room Integration into Team Build</li>
+        </ul>
+        <h3>Team &amp; Role</h3>
+        <p>Space Runner VR is a group project with teammates handling 3D modeling and core mechanics, level assembly and the devlog website, and the health/lives system. I joined the team mid-stream and contributed room implementation, rebuilding the wall cutout mechanic from scratch in the shared project after a hardware change. The team collaborates via Discord and a shared repo.</p>
     </div>
 
     <footer style="text-align: center; color: #888; margin-top: 50px;">
         <p>&copy; 2026 Braeden G Waller | U-M EECS 440</p>
     </footer>
-
 </body>
 </html>
